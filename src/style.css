@@ -1,0 +1,6 @@
+.book-name {
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding: 2px;
+    cursor: pointer;
+}
