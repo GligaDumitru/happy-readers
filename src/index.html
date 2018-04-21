@@ -1,74 +1,83 @@
 <html>
-
-<head>
-    <!-- reset default styling acress browsers -->
-    <link rel="stylesheet" href="normalize.css" />
-    <!-- Skeleton CSS styling, see https://github.com/dhg/Skeleton -->
-    <link rel="stylesheet" href="skeleton.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Happy Readers Society</title>
-</head>
-
-<body>
-    <header>
-        <h1>Happy Readers Club</h1>
-        <q>books for everyone</q>
-    </header>
-    <div id="checkout-container">
-        <h2>Checkout status</h2>
-        <div id="checkout">you have 3 book(s) for checkout</div>
-        <ul>
-            <li>some book</li>
-            <li>another book</li>
-        </ul>
-    </div>
-    <div id="catalogue-container">
-        <h2>Books in stock</h2>
-        <ul>
-            <li>
-                <div class="book">
-                    <span class="title">Pride and Prejudice</span>
-                    <span class="year">1813</span>
-                    <span class="author">Jane Austen</span>
-                    <img src="images/books/pride-and-prejudice.jpg" />
-                </div>
-            </li>
-            <li>
-                <div class="book">
-                    <span class="title">Fairy Tales</span>
-                    <span class="year">1836</span>
-                    <span class="author">Hans Christian Andersen</span>
-                    <img src="images/books/fairy-tales.jpg" />
-                </div>
-            </li>
-            <li>
-                <div class="book">
-                    <span class="title">The Stranger</span>
-                    <span class="year">1942</span>
-                    <span class="author">Albert Camus</span>
-                    <img src="images/books/l-etranger.jpg" />
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div id="checkout-history">
-        <ul>
-            <li class="checkout-history-item">
-                You returned
-                <a class="book-name" alt="some stuff goes here">Book one</a> ,
-                <a class="book-name">Book two</a> ,
+    <head>
+        <!-- reset default styling acress browsers -->
+        <link rel="stylesheet" href="normalize.css"/>
+        <!-- Skeleton CSS styling, see https://github.com/dhg/Skeleton -->
+        <link rel="stylesheet" href="skeleton.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Happy Readers Society</title>
+    </head>
+    <body>
+    <div class="main-container">
+        <header> 
+            <div id="checkout-status">
+                <h3>Checkout status</h3>
+                <div id="checkout">you have 3 book(s) for checkout</div>
+                <ul>
+                    <li>some book</li>
+                    <li>another book</li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1>Happy Readers Club</h1>
+                <q>books for everyone</q>
+            </div>
+            <div id="catalogue-container">
+                <h2>Books in stock</h2>
+                <ul id="catalogue-listing">
+                    <li>
+                        <div class="book">
+                            <span class="title">Pride and Prejudice</span>
+                            <span class="year">1813</span>
+                            <span class="author">Jane Austen</span>
+                            <img src="images/books/pride-and-prejudice.jpg"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <span class="title">Fairy Tales</span>
+                            <span class="year">1836</span>
+                            <span class="author">Hans Christian Andersen</span>
+                            <img src="images/books/fairy-tales.jpg"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <span class="title">The Stranger</span>
+                            <span class="year">1942</span>
+                            <span class="author">Albert Camus</span>
+                            <img src="images/books/l-etranger.jpg"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div id="checkout-history">
+                <ul>
+                    <li class="checkout-history-item">
+                        You returned
+                <a class="book-name" alt="some stuff goes here">Book one</a>
+                        ,
+                <a class="book-name">Book two</a>
+                        ,
                 <a class="book-name">Book three</a>
-                <span class="timestamp">5 days ago</span>
-            </li>
-            <li class="checkout-history-item">
-                You returned
-                <a class="book-name" alt="some stuff goes here">One book</a> ,
-                <a class="book-name">Two book</a> ,
+                        <span class="timestamp">5 days ago</span>
+                    </li>
+                    <li class="checkout-history-item">
+                        You returned
+                <a class="book-name" alt="some stuff goes here">One book</a>
+                        ,
+                <a class="book-name">Two book</a>
+                        ,
                 <a class="book-name">Three</a>
-                <span class="timestamp">30 days ago</span>
-            </li>
-        </ul>
-    </div>
-</body>
-
+                        <span class="timestamp">30 days ago</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    </body>
 </html>
