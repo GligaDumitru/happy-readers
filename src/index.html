@@ -1,54 +1,90 @@
 <html>
-    <head>
-        <!-- reset default styling acress browsers -->
-        <link rel="stylesheet" href="normalize.css"/>
-        <!-- Skeleton CSS styling, see https://github.com/dhg/Skeleton -->
-        <link rel="stylesheet" href="skeleton.css"/>
-        <link rel="stylesheet" href="style.css"/>
-        <title>Happy Readers Society</title>
-    </head>
-    <body>
+<head>
+    <!-- reset default styling acress browsers -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Skeleton CSS styling, see https://github.com/dhg/Skeleton -->
+    <link rel="stylesheet" href="skeleton.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Happy Readers Society</title>
+</head>
+<body>
     <div class="main-container">
-        <header> 
+        <header id="main-header">
             <div id="checkout-status">
                 <h3>Checkout status</h3>
-                <div id="checkout">you have 3 book(s) for checkout</div>
+                <div id="checkout">you have 2 book(s) ready for checkout</div>
                 <ul>
-                    <li>some book</li>
-                    <li>another book</li>
+                    <li>Some Book</li>
+                    <li>Another Book</li>
                 </ul>
             </div>
         </header>
         <main>
             <div>
                 <h1>Happy Readers Club</h1>
-                <q>books for everyone</q>
+                <q>Whenever you read a good book, somewhere in the world a door opens to allow in more light.</q>
             </div>
             <div id="catalogue-container">
                 <h2>Books in stock</h2>
                 <ul id="catalogue-listing">
                     <li>
                         <div class="book">
-                            <span class="title">Pride and Prejudice</span>
-                            <span class="year">1813</span>
-                            <span class="author">Jane Austen</span>
-                            <img src="images/books/pride-and-prejudice.jpg"/>
+                            <img src="images/books/pride-and-prejudice.jpg" />
+                            <div class="book-meta">
+                                <span class="title">Pride and Prejudice</span>
+                                <span class="year">1813</span>
+                                <span class="author">Jane Austen</span>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="book">
-                            <span class="title">Fairy Tales</span>
-                            <span class="year">1836</span>
-                            <span class="author">Hans Christian Andersen</span>
-                            <img src="images/books/fairy-tales.jpg"/>
+                            <img src="images/books/fairy-tales.jpg" />
+                            <div class="book-meta">
+                                <span class="title">Fairy Tales</span>
+                                <span class="year">1836</span>
+                                <span class="author">Hans Christian Andersen</span>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="book">
-                            <span class="title">The Stranger</span>
-                            <span class="year">1942</span>
-                            <span class="author">Albert Camus</span>
-                            <img src="images/books/l-etranger.jpg"/>
+                            <img src="images/books/one-hundred-years-of-solitude.jpg" />
+                            <div class="book-meta">
+                                <span class="title">One Hundred Years of Solitude</span>
+                                <span class="year">1967</span>
+                                <span class="author">Gabriel Garcia Marquez</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="images/books/l-etranger.jpg" />
+                            <div class="book-meta">
+                                <span class="title">The Stranger</span>
+                                <span class="year">1942</span>
+                                <span class="author">Albert Camus</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="images/books/hunger.jpg" />
+                            <div class="book-meta">
+                                <span class="title">Hunger</span>
+                                <span class="year">1890</span>
+                                <span class="author">Knut Hamsun</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="images/books/wuthering-heights.jpg" />
+                            <div class="book-meta">
+                                <span class="title">Wuthering Heights</span>
+                                <span class="year">1847</span>
+                                <span class="author">Emily Brontë</span>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -56,28 +92,29 @@
         </main>
         <footer>
             <div id="checkout-history">
+                <h2>Checkout history</h2>
                 <ul>
                     <li class="checkout-history-item">
                         You returned
-                <a class="book-name" alt="some stuff goes here">Book one</a>
+                        <a class="book-name" alt="some stuff goes here">Book one</a>
                         ,
-                <a class="book-name">Book two</a>
+                        <a class="book-name">Book two</a>
                         ,
-                <a class="book-name">Book three</a>
+                        <a class="book-name">Book three</a>
                         <span class="timestamp">5 days ago</span>
                     </li>
                     <li class="checkout-history-item">
                         You returned
-                <a class="book-name" alt="some stuff goes here">One book</a>
+                        <a class="book-name" alt="some stuff goes here">One book</a>
                         ,
-                <a class="book-name">Two book</a>
+                        <a class="book-name">Two book</a>
                         ,
-                <a class="book-name">Three</a>
+                        <a class="book-name">Three</a>
                         <span class="timestamp">30 days ago</span>
                     </li>
                 </ul>
             </div>
         </footer>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
